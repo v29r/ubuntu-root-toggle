@@ -3,7 +3,7 @@
 [![Shellcheck](https://github.com/v29r/ubuntu-root-toggle/actions/workflows/shellcheck.yml/badge.svg)](https://github.com/v29r/ubuntu-root-toggle/actions/workflows/shellcheck.yml)
 [![License: GPL v3](https://img.shields.io/github/license/v29r/ubuntu-root-toggle)](https://github.com/v29r/ubuntu-root-toggle/blob/main/LICENSE)
 [![Made with Bash](https://img.shields.io/badge/Made%20with-Bash-1f425f.svg)](https://www.gnu.org/software/bash/)
-[![Ubuntu](https://img.shields.io/badge/Ubuntu-20.04%20%7C%2022.04%20%7C%2024.04%20%7C%26.04?logo=ubuntu&logoColor=white)](https://ubuntu.com/)
+[![Ubuntu](https://img.shields.io/badge/Ubuntu-20.04%20%7C%2022.04%20%7C%2024.04%20%7C%2026.04-E95420?logo=ubuntu&logoColor=white)](https://ubuntu.com/)
 
 A simple, interactive Bash script to **enable or disable root login** on Ubuntu systems — covering both SSH access and the root account itself.
 

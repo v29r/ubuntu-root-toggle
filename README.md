@@ -39,7 +39,7 @@ A simple, interactive Bash script to **enable or disable root login** on Ubuntu 
 Run the following command as root (or with `sudo`):
 
 ```bash
-sudo bash <(curl -s https://raw.githubusercontent.com/v29r/ubuntu-root-toggle/main/toggle.sh)
+curl -s https://raw.githubusercontent.com/v29r/ubuntu-root-toggle/main/toggle.sh | bash
 ```
 
 > **Note:** On some systems you must be logged in as root before running the one-liner. If `sudo` doesn't work, switch to root first with `sudo -i`.

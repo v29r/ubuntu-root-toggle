@@ -3,7 +3,7 @@
 ########################################################################
 #                                                                      #
 #  ubuntu-root-toggle — Enable or Disable Root Login on Ubuntu         #
-#  https://github.com/v29r/ubuntu-root-toggle                 #
+#  https://github.com/YOUR_USERNAME/ubuntu-root-toggle                 #
 #                                                                      #
 #  This program is free software: you can redistribute it and/or       #
 #  modify it under the terms of the GNU General Public License as      #
@@ -13,7 +13,7 @@
 ########################################################################
 
 SCRIPT_VERSION="v1.0.0"
-GITHUB_SOURCE="https://raw.githubusercontent.com/v29r/ubuntu-root-toggle/main"
+GITHUB_SOURCE="https://raw.githubusercontent.com/YOUR_USERNAME/ubuntu-root-toggle/main"
 
 # ─────────────────────────────── Colors ────────────────────────────── #
 RED="\033[0;31m"
@@ -27,7 +27,7 @@ RESET="\033[0m"
 print_banner() {
   echo ""
   echo -e "${CYAN}${BOLD}  ubuntu-root-toggle ${SCRIPT_VERSION}${RESET}"
-  echo -e "${CYAN}  https://github.com/v29r/ubuntu-root-toggle${RESET}"
+  echo -e "${CYAN}  https://github.com/YOUR_USERNAME/ubuntu-root-toggle${RESET}"
   echo ""
 }
 
@@ -53,7 +53,7 @@ check_os() {
   source /etc/os-release
   if [[ "$ID" != "ubuntu" ]]; then
     warn "This script is designed for Ubuntu. Detected: ${PRETTY_NAME}"
-    read -rp "  Continue anyway? [y/N]: " CONTINUE
+    read -rp "  Continue anyway? [y/N]: " CONTINUE </dev/tty
     [[ "${CONTINUE,,}" != "y" ]] && { info "Aborted."; exit 0; }
   else
     info "Detected OS: ${PRETTY_NAME}"
@@ -71,7 +71,7 @@ enable_root_login() {
     warn "Root account has no password set."
     echo ""
     echo -e "  ${BOLD}You must set a root password to enable login:${RESET}"
-    passwd root
+    passwd root < /dev/tty
     echo ""
   fi
 
@@ -179,7 +179,7 @@ main_menu() {
   echo "    [3] Check   status only"
   echo "    [4] Exit"
   echo ""
-  read -rp "  Enter option [1-4]: " OPTION
+  read -rp "  Enter option [1-4]: " OPTION </dev/tty
 
   case "$OPTION" in
     1) enable_root_login ;;

@@ -29,6 +29,7 @@ A simple, interactive Bash script to **enable or disable root login** on Ubuntu 
 | Ubuntu          | 20.04   | ✅        |
 |                 | 22.04   | ✅        |
 |                 | 24.04   | ✅        |
+|                 | 26.04   | ✅        |
 | Debian          | 11 / 12 | ⚠️ Likely works, untested |
 | Other           | —       | ❌        |
 

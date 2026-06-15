@@ -95,17 +95,3 @@ git clone https://github.com/v29r/ubuntu-root-toggle.git
 cd ubuntu-root-toggle
 sudo bash toggle.sh
 ```
-
----
-
-## Contributing
-
-Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request.
-
----
-
-## License
-
-Copyright (C) 2024 – 2026, YOUR_NAME and contributors.
-
-This project is licensed under the [GNU General Public License v3.0](LICENSE).

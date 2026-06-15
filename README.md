@@ -1,7 +1,7 @@
 # 🔐 ubuntu-root-toggle
 
-[![Shellcheck](https://github.com/YOUR_USERNAME/ubuntu-root-toggle/actions/workflows/shellcheck.yml/badge.svg)](https://github.com/YOUR_USERNAME/ubuntu-root-toggle/actions/workflows/shellcheck.yml)
-[![License: GPL v3](https://img.shields.io/github/license/YOUR_USERNAME/ubuntu-root-toggle)](https://github.com/YOUR_USERNAME/ubuntu-root-toggle/blob/main/LICENSE)
+[![Shellcheck](https://github.com/v29r/ubuntu-root-toggle/actions/workflows/shellcheck.yml/badge.svg)](https://github.com/v29r/ubuntu-root-toggle/actions/workflows/shellcheck.yml)
+[![License: GPL v3](https://img.shields.io/github/license/v29r/ubuntu-root-toggle)](https://github.com/v29r/ubuntu-root-toggle/blob/main/LICENSE)
 [![Made with Bash](https://img.shields.io/badge/Made%20with-Bash-1f425f.svg)](https://www.gnu.org/software/bash/)
 [![Ubuntu](https://img.shields.io/badge/Ubuntu-20.04%20%7C%2022.04%20%7C%2024.04-E95420?logo=ubuntu&logoColor=white)](https://ubuntu.com/)
 
@@ -39,7 +39,7 @@ A simple, interactive Bash script to **enable or disable root login** on Ubuntu 
 Run the following command as root (or with `sudo`):
 
 ```bash
-sudo bash <(curl -s https://raw.githubusercontent.com/YOUR_USERNAME/ubuntu-root-toggle/main/toggle.sh)
+sudo bash <(curl -s https://raw.githubusercontent.com/v29r/ubuntu-root-toggle/main/toggle.sh)
 ```
 
 > **Note:** On some systems you must be logged in as root before running the one-liner. If `sudo` doesn't work, switch to root first with `sudo -i`.
@@ -48,7 +48,7 @@ You will be presented with an interactive menu:
 
 ```
   ubuntu-root-toggle v1.0.0
-  https://github.com/YOUR_USERNAME/ubuntu-root-toggle
+  https://github.com/v29r/ubuntu-root-toggle
 
   [ INFO  ] Detected OS: Ubuntu 22.04.3 LTS
 
@@ -91,7 +91,7 @@ You will be presented with an interactive menu:
 ## Running locally (without curl)
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ubuntu-root-toggle.git
+git clone https://github.com/v29r/ubuntu-root-toggle.git
 cd ubuntu-root-toggle
 sudo bash toggle.sh
 ```
